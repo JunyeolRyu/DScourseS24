@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Problem Set 1 in DS24}
+\author{Junyeol Ryu}
+\date{January 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Summary}
+
+Here are my interests in economics \& data science.
+
+
+\subsection{Interest in Data Science Class}
+As a Ph.D. in economics, I am interested in developing coding skills and computational methods in economic research. Economics has become more empirical. Accordingly, understanding and mastering data science skills is crucial for analyzing large datasets and conducting high-quality research. Additionally, data science offers tools and methodologies, such as machine learning and data mining, which can provide new insights and approaches to traditional economic problems. 
+
+\subsection{Ideas for Class Project}
+For my project in this class, I am considering focusing on LNG(liquefied natural gas) in South Korea. The Korea Gas Corporation (KOGAS) is a dominant player in the current LNG import and electricity generation system in South Korea using LNG because the Energy Law guaranteed KOGAS’s monopoly power. However, after 2015, since the Energy Law permitted private firms to
+import the LNG, private firms have started to build and operate their own power plants and
+import LNG directly. This marked the onset of competition between KOGAS and private
+firms in importing LNG and electricity generation using the LNG. Therefore, I would like to investigate and compare two different ways of importing LNG and generating electricity. Through this project, I expect to know which method is more cost-effective and what the government's role would be in the competitive market.
+
+
+
+\subsection{Goals for the Class and Post-Graduation Plans}
+My goal for this class is to learn a foundation in data science techniques relevant to economic research such as machine learning, statistical modeling, and data visualization. As for my plans after graduation, I am considering a career in academia or a research institute run by the government, where I can continue to engage in research and teaching. It doesn't matter much to me, whether it's in the United States or home country.
+
+
+
+
+
+\section{Equation}
+\begin{equation}
+  a^2 + b^2 = c^2
+\end{equation}
+
+
+
+
+
+
+
+\end{document}
