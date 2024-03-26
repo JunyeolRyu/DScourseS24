@@ -1,0 +1,98 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{graphicx}
+
+\title{PS7\_Ryu}
+\author{Junyeol Ryu}
+\date{March 2024}
+
+
+
+\begin{document}
+
+
+\maketitle
+
+\section{Q6.}
+
+\textbf{Answer 1}. Rate of log wages missing: 25\% (Figure1)
+\\
+\textbf{Answer 2}. "logwage" variable is most likely to be MAR. This is because The higher the "hgc" value, the higher the missing value probability. (Figure2)
+
+
+
+\begin{figure}[[htb!]]
+    \centering
+            \caption{Summary Table}
+        \includegraphics[width=15cm, height=5cm]{Figure1_summary_table.png}
+        \label{fig:88mono}
+\end{figure}
+
+
+\begin{figure}[[htb!]]
+    \centering
+            \caption{Scatter Plot hgc and tenure by logwage value}
+        \includegraphics[width=12cm, height=8cm]{Figure2_MAR.png}
+        \label{fig:88mono}
+\end{figure}
+
+
+
+
+
+\section{Q7.}
+\\
+\textbf{Estimate the regression using only complete cases}
+\\ hgc coefficient: 0.0623931
+\\
+\textbf{Perform mean imputation to fill in missing log wages}
+\\ mean = 1.62519
+\\ hgc coefficient: 0.0496877
+\\
+\textbf{Impute missing log wages as their predicted values from the complete cases regression above}
+\\ hgc coefficient: 0.0623931
+
+\\
+\\
+\textbf{Answer about the comparison between true value}: The estimated beta indicates 0.062, but the true value is known to be 0.093. which means underestimating the true effect of education on wages. We can think of possible reasons for the underestimation.
+\\
+1) Missing value of wages: Missing values in the dependent variable(wage) lead to a reduced sample size, decreasing the degree of the accurate estimation. Moreover, if the missingness is not completely random(MCAR), it can cause bias into the estimated coefficient. This could be a possible reason for underestimation in complete case analysis with 1669 observations, but Mice and Amelia's results are also underestimated. Thus, we can think of other possible reasons.
+2) Omitted Variable Bias: If there are other relevant variables that affect wages and are correlated with education but are not included in the model, this can lead to biased estimates of the education effect.
+3) Measurement error: If there is a measurement error in the education variable, such as inaccurate information about the schooling year, this can reduce the estimated coefficient.
+4) Sample selection: If the sample used in the analysis is not representative of the population, this could lead to differences in the estimated effect.
+
+\section{Q8.}
+\\
+My data set about the final project doesn't have missing value.
+
+\begin{figure}[t]
+    \centering
+            \caption{Mice Multiple Imputation Regression Model}
+        \includegraphics[width=11cm, height=15cm]{Figure3_mice multiple imputation regression model.png}
+        \label{fig:88mono}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
