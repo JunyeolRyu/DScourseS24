@@ -1,0 +1,143 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{PS8\_RYU}
+
+\date{April 2024}
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx} % Required for inserting images
+
+%\usepackage[legalpaper, margin=0.9in]{geometry}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{setspace}
+\setlength{\parskip}{0pt}
+
+%\usepackage{bookman}
+
+\usepackage{amsmath,amssymb}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+
+
+
+\usepackage{lscape}
+\usepackage{booktabs,caption}
+\usepackage{hyperref}
+%\usepackage[authordate,backend=biber]{biblatex-chicago}
+\usepackage[flushleft]{threeparttable}
+\usepackage[T1]{fontenc}
+\usepackage{palatino}
+\usepackage{soul}
+
+\setlength{\parskip}{0pt}
+
+
+\usepackage{natbib}
+\bibliographystyle{chicago}
+%\bibliography{mybib}
+
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    allcolors=blue
+    }
+
+
+
+\begin{document}
+
+\maketitle
+
+\section{Q5.}
+\large{Very little difference. Rounding up to the decimal point yields a nearly identical value.}
+
+
+\section{Q7.}
+Very similar, but not completely identical, values were derived.
+
+\\\
+\\\
+<Result of Computing beta\_hat\_OLS using nloptr's L-BFGS algorithm>
+\\
+- Optimal value of objective function:  24990.8396899258 
+\\
+- Optimal value of controls: 1.501052 -1.00083 -0.251648 0.7490406 3.500553 -2.000819 0.4987148 1.002827 1.24651 2.001001
+\\\
+\\\
+<Result of Computing beta\_hat\_OLS using Nelder-Mead algorithm>
+\\
+- Current value of objective function:  24992.0556652445 
+\\
+- Current value of controls: 1.500973 -0.9984383 -0.2511872 0.7477687 3.499967 -2.001487 0.4983476 1.001078 1.246084 2.00035
+
+\section{Q8.}
+The true value of beta is 1.5,  −1,  −0.25,  0.75,  3.5,  −2,  0.5,  1,  1.25,  2.
+\\\
+\\\
+And the estimate of the beta hat is 1.501,  -1.001, -0.252,  0.749,  3.501,  -2.001,  0.499,  1.003,  1.247,  2.001.
+\\\
+\\\
+OLS estimation gives a similar and identical value compared to the true beta value.
+
+
+
+\begin{table}[htbp]\centering
+\centering
+\caption{Regression Table}
+\begin{tabular}[t]{lc}
+\toprule
+  &  \multicolumn{1}{c}{\textsc{OLS Estimation}}\\  
+\hline \hline
+\addlinespace
+X1 & \num{1.501}\sym{***}\\
+ & \vphantom{9} (\num{0.002})\\
+X2 & \num{-1.001}\sym{***}\\
+ & \vphantom{8} (\num{0.002})\\
+X3 & \num{-0.252}\sym{***}\\
+ & \vphantom{7} (\num{0.002})\\
+X4 & \num{0.749}\sym{***}\\
+ & \vphantom{6} (\num{0.002})\\
+X5 & \num{3.501}\sym{***}\\
+ & \vphantom{5} (\num{0.002})\\
+X6 & \num{-2.001}\sym{***}\\
+ & \vphantom{4} (\num{0.002})\\
+X7 & \num{0.499}\sym{***}\\
+ & \vphantom{3} (\num{0.002})\\
+X8 & \num{1.003}\sym{***}\\
+ & \vphantom{2} (\num{0.002})\\
+X9 & \num{1.247}\sym{***}\\
+ & \vphantom{1} (\num{0.002})\\
+X10 & \num{2.001}\sym{***}\\
+ & (\num{0.002})\\
+\midrule
+Num.Obs. & \num{100000}\\
+R2 & \num{0.991}\\
+R2 Adj. & \num{0.991}\\
+AIC & \num{145143.6}\\
+BIC & \num{145248.3}\\
+Log.Lik. & \num{-72560.811}\\
+RMSE & \num{0.50}\\
+\bottomrule
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+\end{document}
